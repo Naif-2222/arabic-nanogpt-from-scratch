@@ -1,0 +1,8 @@
+# 1. Download Arabic Wikipedia (~1-2 min, only 20MB)
+python data\arabic\get_data.py
+
+# 2. Tokenize it (~10 sec)
+python data\arabic\prepare.py
+
+# 3. Fine-tune GPT-2 on it — THIS IS THE TRAINING STEP
+python train.py config\finetune_arabic.py
